@@ -1,0 +1,8 @@
+第2题
+在SQL查询语句中，用于选择特定列的短语是？
+A. SELECT
+B. FROM
+C. WHERE
+D. GROUP BY
+答案：A
+解析：SELECT 短语用于指定需要从数据库中选择哪些列的数据。

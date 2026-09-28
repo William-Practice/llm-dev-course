@@ -1,0 +1,45 @@
+### Day 25: Qwen2.5-1.5B QLoRA 微调（4GB 显存适配）
+### 用法: llamafactory-cli train train_qlora.yaml
+
+### 模型
+model_name_or_path: /data/models/Qwen2.5-1.5B-Instruct
+trust_remote_code: true
+
+### 训练阶段
+stage: sft
+do_train: true
+finetuning_type: lora
+template: qwen                      # Qwen2.5 用 qwen 模板
+
+### LoRA 参数（课程推荐套餐 8/16/0.05）
+lora_rank: 8
+lora_alpha: 16
+lora_dropout: 0.05
+lora_target: all                    # 所有线性层都挂 LoRA
+
+### 数据集
+dataset: kaoyan_qa
+dataset_dir: /data/Projects/GLMModelsDemo/day25/data
+cutoff_len: 512                     # 4GB 显存关键：截断长度压到 512
+max_samples: 600
+overwrite_cache: true
+preprocessing_num_workers: 4
+
+### 输出
+output_dir: /data/Projects/GLMModelsDemo/day25/saves/qwen2.5-1.5b-lora
+logging_steps: 5
+save_steps: 100
+plot_loss: true                     # 生成 loss 曲线图（报告要用）
+overwrite_output_dir: true
+report_to: none                     # 想上 wandb 就改 wandb（加分项）
+
+### 训练超参（4GB 显存适配）
+per_device_train_batch_size: 1      # 关键：批大小 1
+gradient_accumulation_steps: 8      # 用梯度累积凑等效批大小
+learning_rate: 1.0e-4
+num_train_epochs: 3.0
+lr_scheduler_type: cosine
+warmup_ratio: 0.1
+bf16: true
+gradient_checkpointing: true        # 关键：用时间换显存
+quantization_bit: 4                 # 关键：4bit QLoRA，否则 1.5B 也放不下

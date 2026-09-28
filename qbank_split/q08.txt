@@ -1,0 +1,8 @@
+第2题
+下列哪种文件系统支持对文件的加密和解密？
+A. NTFS
+B. FAT32
+C. ext4
+D. ISO9660
+答案：A
+解析：NTFS（New Technology File System）是微软为Windows开发的文件系统，它支持对文件的加密功能，通过EFS（ Encrypting File System）技术实现。

@@ -1,0 +1,23 @@
+============================================================
+LoRA 合并（CPU 执行，避免 4GB 显存不足）
+============================================================
+
+1) 加载基座模型（bf16, CPU）: /data/models/Qwen2.5-1.5B-Instruct
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 5401.84it/s]
+2) 挂载 LoRA: /data/Projects/GLMModelsDemo/day25/saves/qwen2.5-1.5b-lora
+3) 合并权重（merge_and_unload）...
+   ✓ 合并完成
+4) 保存到 /data/models/Qwen2.5-1.5B-kaoyan-merged
+Writing model shards:   0%|          | 0/2 [00:00<?, ?it/s]Writing model shards:  50%|█████     | 1/2 [00:00<00:00,  2.22it/s]Writing model shards: 100%|██████████| 2/2 [00:00<00:00,  3.33it/s]Writing model shards: 100%|██████████| 2/2 [00:00<00:00,  3.10it/s]
+   ✓ 已保存（2.89 GB，8 个文件）
+
+文件清单:
+         0.0 MB  chat_template.jinja
+         0.0 MB  config.json
+         0.0 MB  generation_config.json
+      1899.6 MB  model-00001-of-00002.safetensors
+      1044.9 MB  model-00002-of-00002.safetensors
+         0.0 MB  model.safetensors.index.json
+        10.9 MB  tokenizer.json
+         0.0 MB  tokenizer_config.json

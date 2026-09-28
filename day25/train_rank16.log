@@ -1,0 +1,573 @@
+[transformers] warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+[WARNING|2026-09-27 23:22:11] llamafactory.hparams.parser:149 >> We recommend enable `upcast_layernorm` in quantized training.
+[INFO|2026-09-27 23:22:11] llamafactory.hparams.parser:523 >> Process rank: 0, world size: 1, device: cuda:0, distributed training: False, compute dtype: torch.bfloat16
+[INFO|configuration_utils.py:769] 2026-09-27 23:22:11,383 >> loading configuration file /data/models/Qwen2.5-1.5B-Instruct/config.json
+[INFO|configuration_utils.py:847] 2026-09-27 23:22:11,387 >> Model config Qwen2Config {
+  "architectures": [
+    "Qwen2ForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "dtype": "bfloat16",
+  "eos_token_id": 151645,
+  "hidden_act": "silu",
+  "hidden_size": 1536,
+  "initializer_range": 0.02,
+  "intermediate_size": 8960,
+  "layer_types": [
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention"
+  ],
+  "max_position_embeddings": 32768,
+  "max_window_layers": 21,
+  "model_type": "qwen2",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 28,
+  "num_key_value_heads": 2,
+  "pad_token_id": null,
+  "rms_norm_eps": 1e-06,
+  "rope_parameters": {
+    "rope_theta": 1000000.0,
+    "rope_type": "default"
+  },
+  "sliding_window": null,
+  "tie_word_embeddings": true,
+  "transformers_version": "5.6.0",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "vocab_size": 151936
+}
+
+[INFO|configuration_utils.py:769] 2026-09-27 23:22:11,651 >> loading configuration file /data/models/Qwen2.5-1.5B-Instruct/config.json
+[INFO|configuration_utils.py:847] 2026-09-27 23:22:11,652 >> Model config Qwen2Config {
+  "architectures": [
+    "Qwen2ForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "dtype": "bfloat16",
+  "eos_token_id": 151645,
+  "hidden_act": "silu",
+  "hidden_size": 1536,
+  "initializer_range": 0.02,
+  "intermediate_size": 8960,
+  "layer_types": [
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention"
+  ],
+  "max_position_embeddings": 32768,
+  "max_window_layers": 21,
+  "model_type": "qwen2",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 28,
+  "num_key_value_heads": 2,
+  "pad_token_id": null,
+  "rms_norm_eps": 1e-06,
+  "rope_parameters": {
+    "rope_theta": 1000000.0,
+    "rope_type": "default"
+  },
+  "sliding_window": null,
+  "tie_word_embeddings": true,
+  "transformers_version": "5.6.0",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "vocab_size": 151936
+}
+
+[INFO|configuration_utils.py:769] 2026-09-27 23:22:11,653 >> loading configuration file /data/models/Qwen2.5-1.5B-Instruct/config.json
+[INFO|configuration_utils.py:847] 2026-09-27 23:22:11,654 >> Model config Qwen2Config {
+  "architectures": [
+    "Qwen2ForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "dtype": "bfloat16",
+  "eos_token_id": 151645,
+  "hidden_act": "silu",
+  "hidden_size": 1536,
+  "initializer_range": 0.02,
+  "intermediate_size": 8960,
+  "layer_types": [
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention"
+  ],
+  "max_position_embeddings": 32768,
+  "max_window_layers": 21,
+  "model_type": "qwen2",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 28,
+  "num_key_value_heads": 2,
+  "pad_token_id": null,
+  "rms_norm_eps": 1e-06,
+  "rope_parameters": {
+    "rope_theta": 1000000.0,
+    "rope_type": "default"
+  },
+  "sliding_window": null,
+  "tie_word_embeddings": true,
+  "transformers_version": "5.6.0",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "vocab_size": 151936
+}
+
+[INFO|2026-09-27 23:22:11] llamafactory.data.loader:144 >> Loading dataset train.jsonl...
+Converting format of dataset (num_proc=4): 100%|██████████| 492/492 [00:00<?, ? examples/s]Converting format of dataset (num_proc=4): 738 examples [00:00, 2418.40 examples/s]        Converting format of dataset (num_proc=4): 984 examples [00:00, 2473.06 examples/s]
+Running tokenizer on dataset (num_proc=4): 100%|██████████| 492/492 [00:00<?, ? examples/s]Running tokenizer on dataset (num_proc=4): 615 examples [00:02, 60.58 examples/s]          Running tokenizer on dataset (num_proc=4): 738 examples [00:03, 71.59 examples/s]Running tokenizer on dataset (num_proc=4): 861 examples [00:04, 77.73 examples/s]Running tokenizer on dataset (num_proc=4): 984 examples [00:06, 82.60 examples/s]Running tokenizer on dataset (num_proc=4): 984 examples [00:06, 77.00 examples/s]
+training example:
+input_ids:
+[151644, 8948, 198, 2610, 525, 1207, 16948, 11, 3465, 553, 54364, 14817, 13, 1446, 525, 264, 10950, 17847, 13, 151645, 198, 151644, 872, 198, 106582, 100473, 52853, 67831, 101047, 101252, 101290, 11319, 151645, 198, 151644, 77091, 198, 100473, 52853, 67831, 101047, 101252, 101290, 104442, 16530, 105537, 34204, 103947, 100708, 62926, 26232, 17714, 103947, 100708, 31838, 101279, 9370, 105310, 100538, 1773, 100147, 101290, 104046, 34187, 101252, 9370, 105310, 47606, 33108, 102024, 34204, 100708, 106233, 3837, 101252, 20412, 104384, 99489, 105166, 105017, 3837, 100629, 105310, 100538, 33071, 5373, 101079, 100682, 105178, 113702, 1773, 77557, 3837, 102493, 106233, 16530, 105537, 34204, 103947, 100708, 3837, 77288, 100659, 105125, 118119, 33108, 99891, 39907, 36407, 100720, 102493, 1773, 101252, 20412, 107162, 21894, 52129, 3837, 99639, 99322, 102060, 105549, 3837, 100630, 118917, 33108, 103971, 99328, 1773, 151645, 198]
+inputs:
+<|im_start|>system
+You are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>
+<|im_start|>user
+什么是唯物论中的物质概念？<|im_end|>
+<|im_start|>assistant
+唯物论中的物质概念是指不依赖于人的意识并能为人的意识所反映的客观实在。这一概念强调了物质的客观存在和独立于意识的存在，物质是构成世界的基本要素，具有客观实在性、运动变化性和多样性。例如，地球的存在不依赖于人的意识，但人们可以通过感官和科学方法来认识地球。物质是世界的本原，是一切现象的基础，包括自然界和人类社会。<|im_end|>
+
+label_ids:
+[-100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, 100473, 52853, 67831, 101047, 101252, 101290, 104442, 16530, 105537, 34204, 103947, 100708, 62926, 26232, 17714, 103947, 100708, 31838, 101279, 9370, 105310, 100538, 1773, 100147, 101290, 104046, 34187, 101252, 9370, 105310, 47606, 33108, 102024, 34204, 100708, 106233, 3837, 101252, 20412, 104384, 99489, 105166, 105017, 3837, 100629, 105310, 100538, 33071, 5373, 101079, 100682, 105178, 113702, 1773, 77557, 3837, 102493, 106233, 16530, 105537, 34204, 103947, 100708, 3837, 77288, 100659, 105125, 118119, 33108, 99891, 39907, 36407, 100720, 102493, 1773, 101252, 20412, 107162, 21894, 52129, 3837, 99639, 99322, 102060, 105549, 3837, 100630, 118917, 33108, 103971, 99328, 1773, 151645, 198]
+labels:
+唯物论中的物质概念是指不依赖于人的意识并能为人的意识所反映的客观实在。这一概念强调了物质的客观存在和独立于意识的存在，物质是构成世界的基本要素，具有客观实在性、运动变化性和多样性。例如，地球的存在不依赖于人的意识，但人们可以通过感官和科学方法来认识地球。物质是世界的本原，是一切现象的基础，包括自然界和人类社会。<|im_end|>
+
+[INFO|configuration_utils.py:769] 2026-09-27 23:22:20,810 >> loading configuration file /data/models/Qwen2.5-1.5B-Instruct/config.json
+[INFO|configuration_utils.py:847] 2026-09-27 23:22:20,811 >> Model config Qwen2Config {
+  "architectures": [
+    "Qwen2ForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "dtype": "bfloat16",
+  "eos_token_id": 151645,
+  "hidden_act": "silu",
+  "hidden_size": 1536,
+  "initializer_range": 0.02,
+  "intermediate_size": 8960,
+  "layer_types": [
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention"
+  ],
+  "max_position_embeddings": 32768,
+  "max_window_layers": 21,
+  "model_type": "qwen2",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 28,
+  "num_key_value_heads": 2,
+  "pad_token_id": null,
+  "rms_norm_eps": 1e-06,
+  "rope_parameters": {
+    "rope_theta": 1000000.0,
+    "rope_type": "default"
+  },
+  "sliding_window": null,
+  "tie_word_embeddings": true,
+  "transformers_version": "5.6.0",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "vocab_size": 151936
+}
+
+[INFO|2026-09-27 23:22:20] llamafactory.model.model_utils.quantization:144 >> Quantizing model to 4 bit with bitsandbytes.
+[INFO|2026-09-27 23:22:20] llamafactory.model.model_utils.kv_cache:144 >> KV cache is disabled during training.
+[INFO|modeling_utils.py:748] 2026-09-27 23:22:22,121 >> loading weights file /data/models/Qwen2.5-1.5B-Instruct/model.safetensors
+[INFO|modeling_utils.py:821] 2026-09-27 23:22:22,121 >> Will use dtype=torch.bfloat16 as defined in model's config object
+[INFO|configuration_utils.py:1027] 2026-09-27 23:22:22,122 >> Generate config GenerationConfig {
+  "bos_token_id": 151643,
+  "eos_token_id": 151645,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "use_cache": false
+}
+
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   0%|          | 1/338 [00:00<01:34,  3.57it/s]Loading weights:   3%|▎         | 11/338 [00:00<00:09, 35.93it/s]Loading weights:   8%|▊         | 28/338 [00:00<00:03, 79.30it/s]Loading weights:  15%|█▌        | 51/338 [00:00<00:02, 123.56it/s]Loading weights:  20%|██        | 68/338 [00:00<00:01, 137.50it/s]Loading weights:  26%|██▌       | 88/338 [00:00<00:01, 152.88it/s]Loading weights:  33%|███▎      | 111/338 [00:00<00:01, 171.41it/s]Loading weights:  38%|███▊      | 130/338 [00:01<00:01, 174.59it/s]Loading weights:  44%|████▍     | 149/338 [00:01<00:01, 168.45it/s]Loading weights:  51%|█████     | 172/338 [00:01<00:00, 181.51it/s]Loading weights:  58%|█████▊    | 195/338 [00:01<00:00, 190.69it/s]Loading weights:  64%|██████▎   | 215/338 [00:01<00:00, 189.12it/s]Loading weights:  70%|██████▉   | 235/338 [00:01<00:00, 182.48it/s]Loading weights:  76%|███████▌  | 256/338 [00:01<00:00, 185.93it/s]Loading weights:  83%|████████▎ | 279/338 [00:01<00:00, 193.78it/s]Loading weights:  88%|████████▊ | 299/338 [00:01<00:00, 190.77it/s]Loading weights:  94%|█████████▍| 319/338 [00:02<00:00, 183.35it/s]Loading weights: 100%|██████████| 338/338 [00:02<00:00, 161.35it/s]
+[INFO|configuration_utils.py:978] 2026-09-27 23:22:24,387 >> loading configuration file /data/models/Qwen2.5-1.5B-Instruct/generation_config.json
+[INFO|configuration_utils.py:1027] 2026-09-27 23:22:24,388 >> Generate config GenerationConfig {
+  "bos_token_id": 151643,
+  "do_sample": true,
+  "eos_token_id": [
+    151645,
+    151643
+  ],
+  "pad_token_id": 151643,
+  "repetition_penalty": 1.1,
+  "temperature": 0.7,
+  "top_k": 20,
+  "top_p": 0.8
+}
+
+[INFO|dynamic_module_utils.py:406] 2026-09-27 23:22:24,388 >> Could not locate the custom_generate/generate.py inside /data/models/Qwen2.5-1.5B-Instruct.
+[INFO|2026-09-27 23:22:24] llamafactory.model.model_utils.checkpointing:144 >> Gradient checkpointing enabled.
+[INFO|2026-09-27 23:22:24] llamafactory.model.model_utils.attention:144 >> Using torch SDPA for faster training and inference.
+[INFO|2026-09-27 23:22:24] llamafactory.model.adapter:144 >> Upcasting trainable params to float32.
+[INFO|2026-09-27 23:22:24] llamafactory.model.adapter:144 >> Fine-tuning method: LoRA
+[INFO|2026-09-27 23:22:24] llamafactory.model.model_utils.misc:144 >> Found linear modules: k_proj,gate_proj,down_proj,up_proj,o_proj,v_proj,q_proj
+[INFO|2026-09-27 23:22:24] llamafactory.model.loader:144 >> trainable params: 18,464,768 || all params: 1,562,179,072 || trainable%: 1.1820
+[WARNING|trainer_utils.py:1238] 2026-09-27 23:22:24,883 >> The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'bos_token_id': None, 'pad_token_id': 151643}.
+[INFO|trainer.py:1469] 2026-09-27 23:22:25,108 >> ***** Running training *****
+[INFO|trainer.py:1470] 2026-09-27 23:22:25,108 >>   Num examples = 492
+[INFO|trainer.py:1471] 2026-09-27 23:22:25,108 >>   Num Epochs = 3
+[INFO|trainer.py:1472] 2026-09-27 23:22:25,108 >>   Num update steps per epoch = 62
+[INFO|trainer.py:1473] 2026-09-27 23:22:25,108 >>   Instantaneous batch size per device = 1
+[INFO|trainer.py:1476] 2026-09-27 23:22:25,108 >>   Total train batch size (w. parallel, distributed & accumulation) = 8
+[INFO|trainer.py:1477] 2026-09-27 23:22:25,108 >>   Gradient Accumulation steps = 8
+[INFO|trainer.py:1478] 2026-09-27 23:22:25,108 >>   Total optimization steps = 186
+[INFO|trainer.py:1479] 2026-09-27 23:22:25,112 >>   Number of trainable parameters = 18,464,768
+  0%|          | 0/186 [00:00<?, ?it/s]  1%|          | 1/186 [00:03<10:11,  3.31s/it]  1%|          | 2/186 [00:06<09:08,  2.98s/it]  2%|▏         | 3/186 [00:08<08:20,  2.73s/it]  2%|▏         | 4/186 [00:10<07:42,  2.54s/it]  3%|▎         | 5/186 [00:13<08:05,  2.68s/it]                                               {'loss': '1.254', 'grad_norm': '0.529', 'learning_rate': '2.105e-05', 'epoch': '0.0813'}
+  3%|▎         | 5/186 [00:13<08:05,  2.68s/it]  3%|▎         | 6/186 [00:16<07:57,  2.65s/it]  4%|▍         | 7/186 [00:19<08:06,  2.72s/it]  4%|▍         | 8/186 [00:21<07:56,  2.68s/it]  5%|▍         | 9/186 [00:24<07:38,  2.59s/it]  5%|▌         | 10/186 [00:26<07:43,  2.63s/it]                                                {'loss': '1.323', 'grad_norm': '0.5484', 'learning_rate': '4.737e-05', 'epoch': '0.1626'}
+  5%|▌         | 10/186 [00:26<07:43,  2.63s/it]  6%|▌         | 11/186 [00:29<07:45,  2.66s/it]  6%|▋         | 12/186 [00:32<07:42,  2.66s/it]  7%|▋         | 13/186 [00:34<07:33,  2.62s/it]  8%|▊         | 14/186 [00:37<07:32,  2.63s/it]  8%|▊         | 15/186 [00:40<07:52,  2.76s/it]                                                {'loss': '1.263', 'grad_norm': '0.4424', 'learning_rate': '7.368e-05', 'epoch': '0.2439'}
+  8%|▊         | 15/186 [00:40<07:52,  2.76s/it]  9%|▊         | 16/186 [00:42<07:33,  2.67s/it]  9%|▉         | 17/186 [00:45<07:30,  2.66s/it] 10%|▉         | 18/186 [00:48<07:37,  2.72s/it] 10%|█         | 19/186 [00:50<07:18,  2.62s/it] 11%|█         | 20/186 [00:53<07:17,  2.64s/it]                                                {'loss': '1.221', 'grad_norm': '0.6009', 'learning_rate': '0.0001', 'epoch': '0.3252'}
+ 11%|█         | 20/186 [00:53<07:17,  2.64s/it] 11%|█▏        | 21/186 [00:56<07:27,  2.71s/it] 12%|█▏        | 22/186 [00:58<07:11,  2.63s/it] 12%|█▏        | 23/186 [01:01<07:17,  2.68s/it] 13%|█▎        | 24/186 [01:04<07:13,  2.68s/it] 13%|█▎        | 25/186 [01:06<07:06,  2.65s/it]                                                {'loss': '1.212', 'grad_norm': '0.5712', 'learning_rate': '9.978e-05', 'epoch': '0.4065'}
+ 13%|█▎        | 25/186 [01:06<07:06,  2.65s/it] 14%|█▍        | 26/186 [01:09<07:02,  2.64s/it] 15%|█▍        | 27/186 [01:12<07:08,  2.70s/it] 15%|█▌        | 28/186 [01:15<07:27,  2.83s/it] 16%|█▌        | 29/186 [01:18<07:27,  2.85s/it] 16%|█▌        | 30/186 [01:20<07:00,  2.69s/it]                                                {'loss': '1.131', 'grad_norm': '0.638', 'learning_rate': '9.912e-05', 'epoch': '0.4878'}
+ 16%|█▌        | 30/186 [01:20<07:00,  2.69s/it] 17%|█▋        | 31/186 [01:23<06:53,  2.67s/it] 17%|█▋        | 32/186 [01:26<07:01,  2.74s/it] 18%|█▊        | 33/186 [01:28<06:48,  2.67s/it] 18%|█▊        | 34/186 [01:31<06:40,  2.63s/it] 19%|█▉        | 35/186 [01:33<06:28,  2.58s/it]                                                {'loss': '1.128', 'grad_norm': '0.6676', 'learning_rate': '9.802e-05', 'epoch': '0.5691'}
+ 19%|█▉        | 35/186 [01:33<06:28,  2.58s/it] 19%|█▉        | 36/186 [01:36<06:35,  2.63s/it] 20%|█▉        | 37/186 [01:39<06:42,  2.70s/it] 20%|██        | 38/186 [01:42<06:47,  2.75s/it] 21%|██        | 39/186 [01:45<06:56,  2.83s/it] 22%|██▏       | 40/186 [01:47<06:45,  2.78s/it]                                                {'loss': '1.071', 'grad_norm': '0.5151', 'learning_rate': '9.65e-05', 'epoch': '0.6504'}
+ 22%|██▏       | 40/186 [01:47<06:45,  2.78s/it] 22%|██▏       | 41/186 [01:50<06:25,  2.66s/it] 23%|██▎       | 42/186 [01:52<06:14,  2.60s/it] 23%|██▎       | 43/186 [01:55<06:13,  2.61s/it] 24%|██▎       | 44/186 [01:57<06:10,  2.61s/it] 24%|██▍       | 45/186 [02:00<06:06,  2.60s/it]                                                {'loss': '1.157', 'grad_norm': '0.5872', 'learning_rate': '9.457e-05', 'epoch': '0.7317'}
+ 24%|██▍       | 45/186 [02:00<06:06,  2.60s/it] 25%|██▍       | 46/186 [02:03<06:06,  2.62s/it] 25%|██▌       | 47/186 [02:05<06:04,  2.63s/it] 26%|██▌       | 48/186 [02:08<06:02,  2.63s/it] 26%|██▋       | 49/186 [02:11<06:01,  2.64s/it] 27%|██▋       | 50/186 [02:13<06:07,  2.70s/it]                                                {'loss': '1.18', 'grad_norm': '0.572', 'learning_rate': '9.225e-05', 'epoch': '0.813'}
+ 27%|██▋       | 50/186 [02:13<06:07,  2.70s/it] 27%|██▋       | 51/186 [02:16<06:06,  2.71s/it] 28%|██▊       | 52/186 [02:19<05:59,  2.69s/it] 28%|██▊       | 53/186 [02:22<06:05,  2.75s/it] 29%|██▉       | 54/186 [02:25<06:10,  2.80s/it] 30%|██▉       | 55/186 [02:28<06:25,  2.94s/it]                                                {'loss': '1.094', 'grad_norm': '0.5499', 'learning_rate': '8.955e-05', 'epoch': '0.8943'}
+ 30%|██▉       | 55/186 [02:28<06:25,  2.94s/it] 30%|███       | 56/186 [02:31<06:15,  2.89s/it] 31%|███       | 57/186 [02:33<06:05,  2.83s/it] 31%|███       | 58/186 [02:36<06:08,  2.88s/it] 32%|███▏      | 59/186 [02:39<06:08,  2.90s/it] 32%|███▏      | 60/186 [02:42<06:05,  2.90s/it]                                                {'loss': '1.119', 'grad_norm': '0.5603', 'learning_rate': '8.65e-05', 'epoch': '0.9756'}
+ 32%|███▏      | 60/186 [02:42<06:05,  2.90s/it] 33%|███▎      | 61/186 [02:45<05:59,  2.88s/it] 33%|███▎      | 62/186 [02:46<04:56,  2.39s/it] 34%|███▍      | 63/186 [02:49<05:14,  2.56s/it] 34%|███▍      | 64/186 [02:52<05:14,  2.58s/it] 35%|███▍      | 65/186 [02:55<05:13,  2.59s/it]                                                {'loss': '1.019', 'grad_norm': '0.6037', 'learning_rate': '8.313e-05', 'epoch': '1.049'}
+ 35%|███▍      | 65/186 [02:55<05:13,  2.59s/it] 35%|███▌      | 66/186 [02:58<05:28,  2.74s/it] 36%|███▌      | 67/186 [03:00<05:22,  2.71s/it] 37%|███▋      | 68/186 [03:03<05:23,  2.74s/it] 37%|███▋      | 69/186 [03:06<05:29,  2.81s/it] 38%|███▊      | 70/186 [03:09<05:33,  2.88s/it]                                                {'loss': '0.9813', 'grad_norm': '0.5937', 'learning_rate': '7.947e-05', 'epoch': '1.13'}
+ 38%|███▊      | 70/186 [03:09<05:33,  2.88s/it] 38%|███▊      | 71/186 [03:12<05:35,  2.92s/it] 39%|███▊      | 72/186 [03:15<05:27,  2.87s/it] 39%|███▉      | 73/186 [03:17<05:10,  2.75s/it] 40%|███▉      | 74/186 [03:21<05:24,  2.90s/it] 40%|████      | 75/186 [03:23<05:19,  2.88s/it]                                                {'loss': '0.9971', 'grad_norm': '0.6516', 'learning_rate': '7.554e-05', 'epoch': '1.211'}
+ 40%|████      | 75/186 [03:23<05:19,  2.88s/it] 41%|████      | 76/186 [03:26<05:13,  2.85s/it] 41%|████▏     | 77/186 [03:29<05:18,  2.92s/it] 42%|████▏     | 78/186 [03:32<05:13,  2.90s/it] 42%|████▏     | 79/186 [03:35<05:02,  2.83s/it] 43%|████▎     | 80/186 [03:37<04:51,  2.75s/it]                                                {'loss': '1.01', 'grad_norm': '0.68', 'learning_rate': '7.139e-05', 'epoch': '1.293'}
+ 43%|████▎     | 80/186 [03:37<04:51,  2.75s/it] 44%|████▎     | 81/186 [03:40<04:55,  2.81s/it] 44%|████▍     | 82/186 [03:43<05:02,  2.91s/it] 45%|████▍     | 83/186 [03:46<04:59,  2.91s/it] 45%|████▌     | 84/186 [03:49<04:51,  2.86s/it] 46%|████▌     | 85/186 [03:52<04:44,  2.82s/it]                                                {'loss': '0.9125', 'grad_norm': '0.7192', 'learning_rate': '6.705e-05', 'epoch': '1.374'}
+ 46%|████▌     | 85/186 [03:52<04:44,  2.82s/it] 46%|████▌     | 86/186 [03:55<04:46,  2.87s/it] 47%|████▋     | 87/186 [03:58<04:42,  2.85s/it] 47%|████▋     | 88/186 [04:00<04:40,  2.86s/it] 48%|████▊     | 89/186 [04:04<04:44,  2.93s/it] 48%|████▊     | 90/186 [04:06<04:40,  2.92s/it]                                                {'loss': '0.9212', 'grad_norm': '0.6946', 'learning_rate': '6.256e-05', 'epoch': '1.455'}
+ 48%|████▊     | 90/186 [04:06<04:40,  2.92s/it] 49%|████▉     | 91/186 [04:10<04:44,  2.99s/it] 49%|████▉     | 92/186 [04:13<04:44,  3.03s/it] 50%|█████     | 93/186 [04:16<04:41,  3.03s/it] 51%|█████     | 94/186 [04:19<04:35,  2.99s/it] 51%|█████     | 95/186 [04:22<04:35,  3.02s/it]                                                {'loss': '0.9796', 'grad_norm': '0.7325', 'learning_rate': '5.796e-05', 'epoch': '1.537'}
+ 51%|█████     | 95/186 [04:22<04:35,  3.02s/it] 52%|█████▏    | 96/186 [04:25<04:44,  3.16s/it] 52%|█████▏    | 97/186 [04:28<04:29,  3.03s/it] 53%|█████▎    | 98/186 [04:31<04:17,  2.93s/it] 53%|█████▎    | 99/186 [04:34<04:20,  3.00s/it] 54%|█████▍    | 100/186 [04:37<04:12,  2.93s/it]                                                 {'loss': '1.022', 'grad_norm': '0.6945', 'learning_rate': '5.329e-05', 'epoch': '1.618'}
+ 54%|█████▍    | 100/186 [04:37<04:12,  2.93s/it][INFO|trainer.py:3815] 2026-09-27 23:27:02,220 >> Saving model checkpoint to /data/Projects/GLMModelsDemo/day25/saves/qwen2.5-1.5b-lora-r16/checkpoint-100
+[INFO|configuration_utils.py:769] 2026-09-27 23:27:02,251 >> loading configuration file /data/models/Qwen2.5-1.5B-Instruct/config.json
+[INFO|configuration_utils.py:847] 2026-09-27 23:27:02,253 >> Model config Qwen2Config {
+  "architectures": [
+    "Qwen2ForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "dtype": "bfloat16",
+  "eos_token_id": 151645,
+  "hidden_act": "silu",
+  "hidden_size": 1536,
+  "initializer_range": 0.02,
+  "intermediate_size": 8960,
+  "layer_types": [
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention"
+  ],
+  "max_position_embeddings": 32768,
+  "max_window_layers": 21,
+  "model_type": "qwen2",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 28,
+  "num_key_value_heads": 2,
+  "pad_token_id": null,
+  "rms_norm_eps": 1e-06,
+  "rope_parameters": {
+    "rope_theta": 1000000.0,
+    "rope_type": "default"
+  },
+  "sliding_window": null,
+  "tie_word_embeddings": true,
+  "transformers_version": "5.6.0",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "vocab_size": 151936
+}
+
+[INFO|tokenization_utils_base.py:3278] 2026-09-27 23:27:02,363 >> chat template saved in /data/Projects/GLMModelsDemo/day25/saves/qwen2.5-1.5b-lora-r16/checkpoint-100/chat_template.jinja
+[INFO|tokenization_utils_base.py:2111] 2026-09-27 23:27:02,364 >> tokenizer config file saved in /data/Projects/GLMModelsDemo/day25/saves/qwen2.5-1.5b-lora-r16/checkpoint-100/tokenizer_config.json
+ 54%|█████▍    | 101/186 [04:40<04:23,  3.10s/it] 55%|█████▍    | 102/186 [04:43<04:13,  3.02s/it] 55%|█████▌    | 103/186 [04:46<04:07,  2.98s/it] 56%|█████▌    | 104/186 [04:49<04:07,  3.02s/it] 56%|█████▋    | 105/186 [04:52<03:59,  2.96s/it]                                                 {'loss': '1.036', 'grad_norm': '0.857', 'learning_rate': '4.859e-05', 'epoch': '1.699'}
+ 56%|█████▋    | 105/186 [04:52<03:59,  2.96s/it] 57%|█████▋    | 106/186 [04:54<03:50,  2.88s/it] 58%|█████▊    | 107/186 [04:58<03:58,  3.02s/it] 58%|█████▊    | 108/186 [05:01<03:53,  2.99s/it] 59%|█████▊    | 109/186 [05:03<03:45,  2.93s/it] 59%|█████▉    | 110/186 [05:06<03:35,  2.83s/it]                                                 {'loss': '0.9946', 'grad_norm': '0.7715', 'learning_rate': '4.39e-05', 'epoch': '1.78'}
+ 59%|█████▉    | 110/186 [05:06<03:35,  2.83s/it] 60%|█████▉    | 111/186 [05:09<03:36,  2.88s/it] 60%|██████    | 112/186 [05:12<03:32,  2.87s/it] 61%|██████    | 113/186 [05:15<03:29,  2.86s/it] 61%|██████▏   | 114/186 [05:18<03:24,  2.84s/it] 62%|██████▏   | 115/186 [05:21<03:25,  2.89s/it]                                                 {'loss': '0.9966', 'grad_norm': '0.7739', 'learning_rate': '3.927e-05', 'epoch': '1.862'}
+ 62%|██████▏   | 115/186 [05:21<03:25,  2.89s/it] 62%|██████▏   | 116/186 [05:23<03:20,  2.86s/it] 63%|██████▎   | 117/186 [05:26<03:13,  2.80s/it] 63%|██████▎   | 118/186 [05:28<03:00,  2.66s/it] 64%|██████▍   | 119/186 [05:31<03:00,  2.69s/it] 65%|██████▍   | 120/186 [05:34<03:04,  2.79s/it]                                                 {'loss': '1.046', 'grad_norm': '0.8172', 'learning_rate': '3.473e-05', 'epoch': '1.943'}
+ 65%|██████▍   | 120/186 [05:34<03:04,  2.79s/it] 65%|██████▌   | 121/186 [05:37<03:03,  2.83s/it] 66%|██████▌   | 122/186 [05:40<03:04,  2.89s/it] 66%|██████▌   | 123/186 [05:43<03:03,  2.91s/it] 67%|██████▋   | 124/186 [05:45<02:33,  2.48s/it] 67%|██████▋   | 125/186 [05:47<02:36,  2.57s/it]                                                 {'loss': '0.9464', 'grad_norm': '0.8136', 'learning_rate': '3.032e-05', 'epoch': '2.016'}
+ 67%|██████▋   | 125/186 [05:47<02:36,  2.57s/it] 68%|██████▊   | 126/186 [05:50<02:42,  2.71s/it] 68%|██████▊   | 127/186 [05:53<02:40,  2.71s/it] 69%|██████▉   | 128/186 [05:56<02:43,  2.82s/it] 69%|██████▉   | 129/186 [05:59<02:41,  2.84s/it] 70%|██████▉   | 130/186 [06:02<02:42,  2.90s/it]                                                 {'loss': '0.9647', 'grad_norm': '0.7899', 'learning_rate': '2.609e-05', 'epoch': '2.098'}
+ 70%|██████▉   | 130/186 [06:02<02:42,  2.90s/it] 70%|███████   | 131/186 [06:05<02:36,  2.84s/it] 71%|███████   | 132/186 [06:08<02:36,  2.90s/it] 72%|███████▏  | 133/186 [06:11<02:36,  2.95s/it] 72%|███████▏  | 134/186 [06:14<02:31,  2.92s/it] 73%|███████▎  | 135/186 [06:17<02:31,  2.97s/it]                                                 {'loss': '0.809', 'grad_norm': '0.7225', 'learning_rate': '2.208e-05', 'epoch': '2.179'}
+ 73%|███████▎  | 135/186 [06:17<02:31,  2.97s/it] 73%|███████▎  | 136/186 [06:20<02:27,  2.95s/it] 74%|███████▎  | 137/186 [06:23<02:24,  2.95s/it] 74%|███████▍  | 138/186 [06:25<02:19,  2.91s/it] 75%|███████▍  | 139/186 [06:29<02:21,  3.01s/it] 75%|███████▌  | 140/186 [06:32<02:22,  3.09s/it]                                                 {'loss': '0.8655', 'grad_norm': '0.6315', 'learning_rate': '1.83e-05', 'epoch': '2.26'}
+ 75%|███████▌  | 140/186 [06:32<02:22,  3.09s/it] 76%|███████▌  | 141/186 [06:35<02:18,  3.09s/it] 76%|███████▋  | 142/186 [06:38<02:10,  2.97s/it] 77%|███████▋  | 143/186 [06:41<02:09,  3.00s/it] 77%|███████▋  | 144/186 [06:44<02:03,  2.93s/it] 78%|███████▊  | 145/186 [06:47<02:01,  2.97s/it]                                                 {'loss': '0.9084', 'grad_norm': '0.8119', 'learning_rate': '1.481e-05', 'epoch': '2.341'}
+ 78%|███████▊  | 145/186 [06:47<02:01,  2.97s/it] 78%|███████▊  | 146/186 [06:49<01:56,  2.91s/it] 79%|███████▉  | 147/186 [06:52<01:54,  2.94s/it] 80%|███████▉  | 148/186 [06:55<01:51,  2.92s/it] 80%|████████  | 149/186 [06:59<01:51,  3.02s/it] 81%|████████  | 150/186 [07:01<01:46,  2.96s/it]                                                 {'loss': '0.8223', 'grad_norm': '0.7593', 'learning_rate': '1.163e-05', 'epoch': '2.423'}
+ 81%|████████  | 150/186 [07:01<01:46,  2.96s/it] 81%|████████  | 151/186 [07:04<01:42,  2.93s/it] 82%|████████▏ | 152/186 [07:07<01:41,  3.00s/it] 82%|████████▏ | 153/186 [07:10<01:34,  2.86s/it] 83%|████████▎ | 154/186 [07:12<01:28,  2.76s/it] 83%|████████▎ | 155/186 [07:15<01:23,  2.68s/it]                                                 {'loss': '0.8141', 'grad_norm': '0.8435', 'learning_rate': '8.789e-06', 'epoch': '2.504'}
+ 83%|████████▎ | 155/186 [07:15<01:23,  2.68s/it] 84%|████████▍ | 156/186 [07:18<01:24,  2.83s/it] 84%|████████▍ | 157/186 [07:21<01:22,  2.84s/it] 85%|████████▍ | 158/186 [07:24<01:20,  2.86s/it] 85%|████████▌ | 159/186 [07:27<01:17,  2.88s/it] 86%|████████▌ | 160/186 [07:30<01:14,  2.85s/it]                                                 {'loss': '0.8254', 'grad_norm': '0.845', 'learning_rate': '6.312e-06', 'epoch': '2.585'}
+ 86%|████████▌ | 160/186 [07:30<01:14,  2.85s/it] 87%|████████▋ | 161/186 [07:33<01:11,  2.87s/it] 87%|████████▋ | 162/186 [07:35<01:09,  2.89s/it] 88%|████████▊ | 163/186 [07:38<01:06,  2.90s/it] 88%|████████▊ | 164/186 [07:41<01:01,  2.78s/it] 89%|████████▊ | 165/186 [07:44<00:59,  2.81s/it]                                                 {'loss': '0.8614', 'grad_norm': '0.7937', 'learning_rate': '4.221e-06', 'epoch': '2.667'}
+ 89%|████████▊ | 165/186 [07:44<00:59,  2.81s/it] 89%|████████▉ | 166/186 [07:47<00:57,  2.87s/it] 90%|████████▉ | 167/186 [07:50<00:54,  2.85s/it] 90%|█████████ | 168/186 [07:52<00:50,  2.81s/it] 91%|█████████ | 169/186 [07:55<00:46,  2.75s/it] 91%|█████████▏| 170/186 [07:58<00:43,  2.74s/it]                                                 {'loss': '0.8914', 'grad_norm': '0.8993', 'learning_rate': '2.535e-06', 'epoch': '2.748'}
+ 91%|█████████▏| 170/186 [07:58<00:43,  2.74s/it] 92%|█████████▏| 171/186 [08:00<00:41,  2.77s/it] 92%|█████████▏| 172/186 [08:03<00:37,  2.69s/it] 93%|█████████▎| 173/186 [08:06<00:34,  2.65s/it] 94%|█████████▎| 174/186 [08:08<00:32,  2.70s/it] 94%|█████████▍| 175/186 [08:11<00:30,  2.77s/it]                                                 {'loss': '0.8681', 'grad_norm': '0.7987', 'learning_rate': '1.269e-06', 'epoch': '2.829'}
+ 94%|█████████▍| 175/186 [08:11<00:30,  2.77s/it] 95%|█████████▍| 176/186 [08:14<00:27,  2.76s/it] 95%|█████████▌| 177/186 [08:17<00:25,  2.85s/it] 96%|█████████▌| 178/186 [08:20<00:23,  2.92s/it] 96%|█████████▌| 179/186 [08:23<00:20,  2.87s/it] 97%|█████████▋| 180/186 [08:26<00:17,  2.91s/it]                                                 {'loss': '0.9084', 'grad_norm': '0.8161', 'learning_rate': '4.329e-07', 'epoch': '2.911'}
+ 97%|█████████▋| 180/186 [08:26<00:17,  2.91s/it] 97%|█████████▋| 181/186 [08:29<00:14,  2.95s/it] 98%|█████████▊| 182/186 [08:32<00:11,  3.00s/it] 98%|█████████▊| 183/186 [08:35<00:09,  3.01s/it] 99%|█████████▉| 184/186 [08:38<00:06,  3.01s/it] 99%|█████████▉| 185/186 [08:41<00:02,  2.96s/it]                                                 {'loss': '0.8366', 'grad_norm': '0.9832', 'learning_rate': '3.538e-08', 'epoch': '2.992'}
+ 99%|█████████▉| 185/186 [08:41<00:02,  2.96s/it]100%|██████████| 186/186 [08:42<00:00,  2.45s/it][INFO|trainer.py:3815] 2026-09-27 23:31:07,846 >> Saving model checkpoint to /data/Projects/GLMModelsDemo/day25/saves/qwen2.5-1.5b-lora-r16/checkpoint-186
+[INFO|configuration_utils.py:769] 2026-09-27 23:31:07,872 >> loading configuration file /data/models/Qwen2.5-1.5B-Instruct/config.json
+[INFO|configuration_utils.py:847] 2026-09-27 23:31:07,873 >> Model config Qwen2Config {
+  "architectures": [
+    "Qwen2ForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "dtype": "bfloat16",
+  "eos_token_id": 151645,
+  "hidden_act": "silu",
+  "hidden_size": 1536,
+  "initializer_range": 0.02,
+  "intermediate_size": 8960,
+  "layer_types": [
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention"
+  ],
+  "max_position_embeddings": 32768,
+  "max_window_layers": 21,
+  "model_type": "qwen2",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 28,
+  "num_key_value_heads": 2,
+  "pad_token_id": null,
+  "rms_norm_eps": 1e-06,
+  "rope_parameters": {
+    "rope_theta": 1000000.0,
+    "rope_type": "default"
+  },
+  "sliding_window": null,
+  "tie_word_embeddings": true,
+  "transformers_version": "5.6.0",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "vocab_size": 151936
+}
+
+[INFO|tokenization_utils_base.py:3278] 2026-09-27 23:31:07,973 >> chat template saved in /data/Projects/GLMModelsDemo/day25/saves/qwen2.5-1.5b-lora-r16/checkpoint-186/chat_template.jinja
+[INFO|tokenization_utils_base.py:2111] 2026-09-27 23:31:07,973 >> tokenizer config file saved in /data/Projects/GLMModelsDemo/day25/saves/qwen2.5-1.5b-lora-r16/checkpoint-186/tokenizer_config.json
+[INFO|trainer.py:1823] 2026-09-27 23:31:08,221 >> 
+
+Training completed. Do not forget to share your model on huggingface.co/models =)
+
+
+                                                 {'train_runtime': '523.1', 'train_samples_per_second': '2.822', 'train_steps_per_second': '0.356', 'train_loss': '1.01', 'epoch': '3'}
+100%|██████████| 186/186 [08:43<00:00,  2.45s/it]100%|██████████| 186/186 [08:43<00:00,  2.81s/it]
+[INFO|trainer.py:3815] 2026-09-27 23:31:08,222 >> Saving model checkpoint to /data/Projects/GLMModelsDemo/day25/saves/qwen2.5-1.5b-lora-r16
+[INFO|configuration_utils.py:769] 2026-09-27 23:31:08,246 >> loading configuration file /data/models/Qwen2.5-1.5B-Instruct/config.json
+[INFO|configuration_utils.py:847] 2026-09-27 23:31:08,247 >> Model config Qwen2Config {
+  "architectures": [
+    "Qwen2ForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "dtype": "bfloat16",
+  "eos_token_id": 151645,
+  "hidden_act": "silu",
+  "hidden_size": 1536,
+  "initializer_range": 0.02,
+  "intermediate_size": 8960,
+  "layer_types": [
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention"
+  ],
+  "max_position_embeddings": 32768,
+  "max_window_layers": 21,
+  "model_type": "qwen2",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 28,
+  "num_key_value_heads": 2,
+  "pad_token_id": null,
+  "rms_norm_eps": 1e-06,
+  "rope_parameters": {
+    "rope_theta": 1000000.0,
+    "rope_type": "default"
+  },
+  "sliding_window": null,
+  "tie_word_embeddings": true,
+  "transformers_version": "5.6.0",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "vocab_size": 151936
+}
+
+[INFO|tokenization_utils_base.py:3278] 2026-09-27 23:31:08,347 >> chat template saved in /data/Projects/GLMModelsDemo/day25/saves/qwen2.5-1.5b-lora-r16/chat_template.jinja
+[INFO|tokenization_utils_base.py:2111] 2026-09-27 23:31:08,347 >> tokenizer config file saved in /data/Projects/GLMModelsDemo/day25/saves/qwen2.5-1.5b-lora-r16/tokenizer_config.json
+***** train metrics *****
+  epoch                    =        3.0
+  total_flos               =  1449889GF
+  train_loss               =     1.0102
+  train_runtime            = 0:08:43.10
+  train_samples_per_second =      2.822
+  train_steps_per_second   =      0.356
+Figure saved at: /data/Projects/GLMModelsDemo/day25/saves/qwen2.5-1.5b-lora-r16/training_loss.png
+[WARNING|2026-09-27 23:31:08] llamafactory.extras.ploting:149 >> No metric eval_loss to plot.
+[WARNING|2026-09-27 23:31:08] llamafactory.extras.ploting:149 >> No metric eval_accuracy to plot.
+[INFO|modelcard.py:263] 2026-09-27 23:31:08,543 >> Dropping the following result as it does not have all the necessary fields:
+{'task': {'name': 'Causal Language Modeling', 'type': 'text-generation'}}
