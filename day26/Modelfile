@@ -1,0 +1,26 @@
+# Modelfile — Day 26：注册微调模型到 Ollama
+#
+# 注意：Ollama 0.34+ 已移除 `ADAPTER` 指令（会报 "LoRA adapters are no longer supported"），
+# 所以正确做法是先把 LoRA 合并进基座（见 merge_lora.py），再用 FROM 导入合并后的模型。
+#
+# 用法：
+#   ollama create kaoyan-qwen -f Modelfile
+#   ollama run kaoyan-qwen "什么是实践是检验真理的唯一标准？"
+
+FROM /data/models/Qwen2.5-1.5B-kaoyan-merged
+
+# 采样参数（与 compare.py 一致，保证对比公平）
+PARAMETER temperature 0.7
+PARAMETER top_p 0.9
+PARAMETER repeat_penalty 1.05
+PARAMETER num_ctx 4096
+
+TEMPLATE """{{ if .System }}<|im_start|>system
+{{ .System }}<|im_end|>
+{{ end }}{{ if .Prompt }}<|im_start|>user
+{{ .Prompt }}<|im_end|>
+{{ end }}<|im_start|>assistant
+{{ .Response }}<|im_end|>
+"""
+
+SYSTEM """你是考研辅导助手，回答要简洁准确、有具体例子，控制在 120-180 字。"""

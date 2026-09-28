@@ -1,0 +1,55 @@
+{
+  "theme": "LangGraph",
+  "steps": [
+    "什么是LangGraph？",
+    "LangGraph的核心概念是什么？",
+    "如何使用LangGraph？",
+    "LangGraph有哪些主要应用场景？",
+    "与其他语言处理技术相比，LangGraph有哪些优势和局限？",
+    "LangGraph的技术实现细节是怎样的？",
+    "LangGraph在不同领域的应用案例有哪些？",
+    "总结整理LangGraph的调研结果"
+  ],
+  "results": [
+    {
+      "step": "什么是LangGraph？",
+      "retries": 0,
+      "passed": true
+    },
+    {
+      "step": "LangGraph的核心概念是什么？",
+      "retries": 0,
+      "passed": true
+    },
+    {
+      "step": "如何使用LangGraph？",
+      "retries": 0,
+      "passed": true
+    },
+    {
+      "step": "LangGraph有哪些主要应用场景？",
+      "retries": 0,
+      "passed": true
+    },
+    {
+      "step": "与其他语言处理技术相比，LangGraph有哪些优势和局限？",
+      "retries": 0,
+      "passed": true
+    },
+    {
+      "step": "LangGraph的技术实现细节是怎样的？",
+      "retries": 0,
+      "passed": true
+    },
+    {
+      "step": "LangGraph在不同领域的应用案例有哪些？",
+      "retries": 0,
+      "passed": true
+    },
+    {
+      "step": "总结整理LangGraph的调研结果",
+      "retries": 0,
+      "passed": true
+    }
+  ]
+}

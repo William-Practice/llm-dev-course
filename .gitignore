@@ -1,0 +1,46 @@
+# ── 虚拟环境（各 1-7GB，绝不上传）──
+venv/
+*/venv/
+helloGLM/
+__pycache__/
+*.py[cod]
+
+# ── 独立仓库（knowledge_base 有自己的 remote，单独管理）──
+knowledge_base/
+
+# ── 训练中间产物（optimizer.pt 单个 70-140MB，只保留最终 adapter）──
+day25/saves/*/checkpoint-*/
+
+# ── 密钥（绝不提交）──
+.env
+.env.local
+.env.*
+!.env.example
+auth.json
+
+# ── 运行时缓存/索引 ──
+kb_index.json
+paper_index.json
+day13/image_cache.json
+day20/batch_results.json
+**/.cache/
+
+# ── 数据库/二进制产物 ──
+*.db
+*.sqlite
+*.gguf
+*.pt
+*.bin
+
+# ── 模型权重例外：LoRA adapter 是实验产物，要提交 ──
+!day25/saves/*/adapter_model.safetensors
+!day25/saves/*/adapter_config.json
+# 但 LLaMA-Factory 复制的 tokenizer 没用（基座模型自带），排除省 33MB
+day25/saves/*/tokenizer.json
+# rank-16 权重 70.5MB 超过 GitHub 建议上限（50MB），实验数据已在报告中，不入库
+day25/saves/qwen2.5-1.5b-lora-r16/adapter_model.safetensors
+
+# ── 系统文件 ──
+.DS_Store
+Thumbs.db
+nohup.out
