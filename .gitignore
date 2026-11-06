@@ -44,3 +44,8 @@ day25/saves/qwen2.5-1.5b-lora-r16/adapter_model.safetensors
 .DS_Store
 Thumbs.db
 nohup.out
+
+# 作业提交包（含机构名与本人姓名，公开仓库不入库）
+作业提交_*/
+提交_吴睿阳_Phase4/
+提交_吴睿阳_Phase4.zip
