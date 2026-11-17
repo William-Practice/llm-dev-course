@@ -83,7 +83,7 @@ def main():
     print("║     🤖 AI 个人知识问答助手           ║")
     print("╚══════════════════════════════════════╝")
 
-    path = input("\n请输入文档路径: ").strip() or "/home/wuruiyang/724/考研笔记.txt"
+    path = input("\n请输入文档路径: ").strip() or "考研笔记.txt"  # 运行时传入本机文档路径
     try:
         context = prepare_context(path)
     except Exception as e:

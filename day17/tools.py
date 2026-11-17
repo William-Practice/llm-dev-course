@@ -10,8 +10,8 @@ import os
 import re
 from datetime import datetime
 
-# 默认知识库文件（可换成任意 txt/md）
-KB_FILE = "/home/wuruiyang/724/考研笔记.txt"
+# 默认知识库文件（可换成任意 txt/md；运行时传入本机文档路径）
+KB_FILE = "考研笔记.txt"
 
 
 # ── 工具实现 ─────────────────────────────────────────────

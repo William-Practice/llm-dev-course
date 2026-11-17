@@ -17,7 +17,7 @@ if not API_KEY:
 API_URL = "https://open.bigmodel.cn/api/paas/v4/chat/completions"
 
 PAPER_PATH = (
-    "/home/wuruiyang/文档/xwechat_files/wxid_zuvhk4hfske022_6e3a/msg/file/2026-07/"
+    "/path/to/your/papers/"
     "2-Spectral clustering based mutant reduction for mutation testing.pdf"
 )
 

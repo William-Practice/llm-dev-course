@@ -20,7 +20,7 @@ except ImportError:                                                    # pragma:
 
 _ROOT = os.path.dirname(os.path.abspath(__file__))
 NOTES_DIR = os.path.join(_ROOT, "notes")
-KB_FILE = "/home/wuruiyang/724/考研笔记.txt"
+KB_FILE = os.path.join(NOTES_DIR, "考研笔记.txt")  # 运行时放入本机文档
 API_KEY = os.getenv("ZHIPU_API_KEY")
 if not API_KEY:
     raise ValueError("请设置环境变量 ZHIPU_API_KEY")

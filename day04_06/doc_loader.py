@@ -91,7 +91,7 @@ def describe(doc: dict) -> str:
 
 if __name__ == "__main__":
     import sys
-    p = sys.argv[1] if len(sys.argv) > 1 else "/home/wuruiyang/724/考研笔记.txt"
+    p = sys.argv[1] if len(sys.argv) > 1 else "考研笔记.txt"  # 运行时传入本机文档路径
     doc = load_any(p)
     print(describe(doc))
     print(f"前 100 字: {doc['text'][:100]}")
