@@ -49,3 +49,7 @@ nohup.out
 作业提交_*/
 提交_吴睿阳_Phase4/
 提交_吴睿阳_Phase4.zip
+
+# ── 微调权重与 tokenizer（体积大，改走 Release 附件，仓库只留训练日志）──
+day25/saves/**/adapter_model.safetensors
+day25/saves/**/tokenizer.json
